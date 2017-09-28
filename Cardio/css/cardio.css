@@ -40,7 +40,7 @@ body {
 .preloader div {
 	display: none;
 	/* Preload the Second Pricing Image */
-	background: url(../img/pricing2.jpg) no-repeat 9999px 9999px;
+	background: url(../img/price-ing2.jpg) no-repeat 9999px 9999px;
 	background-position: 9999px 9999px;
 }
 
@@ -115,7 +115,7 @@ header {
 	color: white;
 	background: rgba(255, 0, 0, 0.93);
 	background: url('../img/holafinal.png');
-	background-size:cover;
+	background-size:100% 100%;
 	
 }
 
@@ -551,7 +551,7 @@ section {
 /* Pricing */
 
 #pricing {
-	background: #00a8ff url('../img/pricing1.jpg') no-repeat center center;
+	background: #00a8ff url('../img/price-ing1.jpg') no-repeat center center;
 	-webkit-background-size: cover;
 	background-size: cover;
 	-webkit-transition: background-image 0.6s linear 0.3s;
@@ -575,6 +575,7 @@ section {
 
 .pricings .pricing .box-main,
 .pricings .pricing .box-second {
+	
 	position: relative;
 	left: 25%;
 	display: inline-block;
@@ -620,6 +621,9 @@ section {
 }
 
 .pricings .pricing .box-main.active {
+		-webkit-background-size: 100% 87.5%;
+	background-size: 100% 87.5%;
+
 	background: #00a8ff;
 	-webkit-transform: translateX(-99%);
 	-ms-transform: translateX(-99%);
@@ -658,9 +662,9 @@ section {
 
 footer {
 	padding: 140px 0 40px;
-	background: url('../img/footer.jpg');
-	-webkit-background-size: cover;
-	background-size: cover;
+	background: url('../img/bottom.jpg');
+	-webkit-background-size: contain;
+	background-size: contain;
 }
 
 footer .trial-button {
