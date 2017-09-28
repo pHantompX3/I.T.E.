@@ -114,7 +114,7 @@ header {
 	width: 100%;
 	color: white;
 	background: rgba(255, 0, 0, 0.93);
-	background: url('../img/holafinal.png');
+	background: url('../img/hola.png');
 	background-size:100% 100%;
 	
 }
@@ -210,11 +210,11 @@ nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 }
 
 .btn.btn-blue {
-	background: #00a8ff;
+	background: #f1592a;
 }
 
 .btn.btn-blue:hover {
-	background: #31b9ff;
+	background: #f68f6f;
 }
 
 .btn.btn-blue-fill {
