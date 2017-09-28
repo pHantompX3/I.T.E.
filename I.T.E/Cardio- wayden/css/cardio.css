@@ -363,7 +363,9 @@ section {
 	transform: translateY(0);
 }
 
-.intro-table-hover:hover .expand {
+.
+
+-table-hover:hover .expand {
 	opacity: 1;
 	-webkit-transform: scale(1);
 	-ms-transform: scale(1);

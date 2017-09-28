@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+	<header>
+		<nav class="navBarheader">
+			<li class="navBar">
+				<a href="HomePage.html"  class="NavBar"> Home</a>
+			</li>
+
+			<li class="navBar">
+				<a href="PackageDetails.html" class="NavBar">Packages</a>
+			</li>			
+			<li class="navBar">
+				<a href="speakerProfiles.html" class="NavBar">Speakers</a>
+			</li>				
+			<li class="navBar">
+				<a href="Login.html" class="NavBar">Login</a>
+			</li>
+			<li class="navBar">
+				<a href="AboutUs.html" class="NavBar"> About Us</a>
+			</li>
+
+		</nav>
+	</header>
+	<div id="Column">
+	<main class="packages">
+		<section>
+			<h1>Register</h1>
+			<p>Enter your personal details below and start learning now!</p>
+			
+			<form>
+				Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name" class="textbox"><br><br>
+			</form>
+			
+			<form>
+			E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="e-mail" class="textbox"><br><br>
+			</form>
+			
+			<form>
+				<textarea class="SignUp" rows="7" cols="54">Type your mailing address here</textarea>
+			</form>
+			
+			<table>
+				<tr>
+					<td>
+						Are you a student?
+					</td>
+					<td id="SignUp">
+						<form>
+							<input type="radio" name="choice" value="yes" checked> Yes
+							<input type="radio" name="choice" value="no"> No
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td style="width:30%">
+						If yes, specify the learning institution you are part of (school/university) 
+					</td>
+					<td id="SignUp">
+						<select>
+							<option value="None"> None</option>
+							<option value="Secondary School"> Secondary School</option>
+							<option value="University"> University</option>
+							<option value="Other">Other</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+				</tr>
+			
+				<tr>
+					<td>
+						Language plan:
+					</td>
+					<td id="SignUp">
+						<select>
+							<option value="Blended"> Blended</option>
+							<option value="Traditional"> Traditional</option>
+							<option value="Online">Online</option>
+							<option value="Crash Course">Crash Course</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+			<table>			
+				<tr>
+					<td style="width:34.5%">
+						Payment Method:
+					</td>
+					
+					<td style="width:30%">
+						<select>
+							<option value="Visa"> Visa</option>
+							<option value="Master Card"> Master Card</option>
+							<option value="Paypal">Paypal</option>
+							<option value="Other">Other</option>
+						</select>
+					</td>
+					
+					<td>
+						<img src="content/payment.png" width="180px" height="auto" style="padding-left:50px">
+					</td>
+					
+				</tr>
+			</table>
+			<form>
+			  <input type="checkbox" name="choice" checked> Send notices and promotions to my email address
+			</form>
+			
+				<input type="button" class="button" value="Submit">
+			
+			
+		</section>
+	
+		<!--Contents of the page go here-->
+	</main>
+	<footer>
+		<aside class="footAside">
+			<nav>
+				<li class="footNavBar">
+					<a href="AboutUs.html"> About Us</a>
+				</li>
+
+				<li class="footNavBar">
+					<a href="ContactUs.html">Contact Us</a>
+				</li>
+			</nav>
+		</aside>
+		<div class="footDiv">
+
+			&copy; 2016 Eureka. All rights reserved.
+			
+		</div>
+	</footer>
+	</div>
+</body>
+</html>
+

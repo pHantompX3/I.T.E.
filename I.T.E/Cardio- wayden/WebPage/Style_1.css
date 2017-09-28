@@ -1,0 +1,255 @@
+
+body{
+	position: relative;
+	background-color: #4faef1;
+	background: linear-gradient(#4faef1, white);
+	/*
+		Can be changed for a background image?
+	*/
+	width: 100%;
+	margin-left: 10%;
+	margin-top: 0px;
+}
+/*------------------------------------------------------------------*/
+
+/*Header and navbar
+
+Header spans the entire width of the page.
+
+*/
+header{
+	width:80%;
+	height: 300px;
+	position: relative;
+
+	background-image: url("content/nightpano.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+
+	/*Find a more suitable background image*/
+
+}
+
+
+.navBarheader{
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	left: 0;
+	background-color: #f49b53;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+li.navBar{
+
+	width: 20%;
+	display: inline;
+	background-color: #f49b53;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+}
+li.navbar:hover{
+	background-color: #fdb77e;
+}
+/*------------------------------------------------------------------*/
+a{
+	font-family: Verdana, Geneva, sans-serif;
+}
+a.NavBar{
+	width: 20%;
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-decoration: none;
+
+
+
+}
+/*Link design*/
+a:link{
+
+}
+
+a:visited{
+
+}
+
+a:hover, a:active{
+
+	background-color: #fdb77e;
+}
+
+
+
+/*------------------------------------------------------------------*/
+
+/*Main and Footer of page*/
+#Column{
+/*	position: absolute;*/
+	top: 300px;
+/*	left: 15%;*/
+	width: 80%;
+	height: 100%;
+	background-color: white;
+}
+
+main{
+	height: auto;
+	margin-right: 5px;
+	margin-left: 5px;
+	padding-top: 40px;
+	padding-bottom: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+main.packages{
+	margin-left: 15%;
+	margin-top: 50px;
+
+}
+
+/*------------------------------------------------------------------*/
+
+
+footer{
+	height: 120px;
+	margin-right: 5px;
+	margin-left: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top: 50px;
+
+	
+}
+/*------------------------------------------------------------------*/
+
+h1{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+section.default{
+
+	padding-top: 10px;
+}
+
+/*------------------------------------------------------------------*/
+
+aside.footAside{
+	float: left;
+}
+div.footDiv{
+	float: right;
+}
+li.footNavBar{
+	width: 20%;
+	display: inline;
+
+	padding-left: 5px;
+	padding-right: 5px;
+
+}
+a.footNavBar{
+
+}
+/*------------------------------------------------------------------*/
+
+/* the picture shown along side the testimonials
+*/
+img.imgTestimonial{
+	width: 80px;
+	height: 80px;
+	float: left;
+}
+
+div.testimonial{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+img.imgProfiles{
+	width: 80px;
+	height: 80px;
+}
+img.imgCircle{
+	border-radius: 50%;
+}
+/*The 
+*/
+p.pTestimonial{
+	padding-left: 200px;
+	font-style: oblique;
+}
+
+
+/*------------------------------------------------------------------*/
+
+embed{
+
+}
+/*------------------------------------------------------------------*/
+
+table.default{
+	padding-top: 50px;
+}
+table.packages{
+	width: 80%;
+
+	outline: 1px solid black;
+	text-align: center;
+}
+th.packages{
+
+}
+tr.default{
+
+}
+
+
+tr.packages{
+
+}
+tr.striped:nth-child(even){
+	background-color: #f2f2f2;
+
+}
+
+td.default{
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+td.packages{
+	margin-left: 5px;
+	width:	25%;
+	height: auto;
+}
+
+
+/*------------------------------------------------------------------*/
+form{
+
+}
+
+textarea{
+
+}
+
+input{
+
+}
+
+
+input.search{
+
+}
+/*------------------------------------------------------------------*/
+
+#home{
+	margin-left: 30px;
+	margin-right: 30px;
+}

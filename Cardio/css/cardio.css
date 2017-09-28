@@ -314,11 +314,13 @@ section {
 }
 
 .intro-table {
+	left: 180px;
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-repeat: repeat;
 	background-position: 0% 0%;
 }
+
 
 .intro-table-first {
 	background-image: url('../img/table-1.jpg');

@@ -1,0 +1,394 @@
+
+body{
+	position: relative;
+	background-color: #4faef1;
+	background: linear-gradient(#4faef1, white);
+	/*
+		Can be changed for a background image?
+	*/
+	width: 100%;
+	min-width: 800px;
+	margin-left: 10%;
+	margin-top: 0px;
+}
+/*------------------------------------------------------------------*/
+
+/*Header and navbar
+
+Header spans the entire width of the page.
+
+*/
+header{
+	width:80%;
+	height: 400px;
+	position: relative;
+	min-width: 770px;
+
+	background-image: url("content/header.jpeg");
+	background-position: top;
+	background-size: 1920px 500px;
+	background-repeat: no-repeat;
+
+	/*Find a more suitable background image*/
+
+}
+
+
+.navBarheader{
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	left: 0;
+	background-color: #f49b53;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+li.navBar{
+
+	width: 20%;
+	display: inline;
+	background-color: #f49b53;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+}
+li.navbar:hover{
+	background-color: #fdb77e;
+}
+/*------------------------------------------------------------------*/
+a{
+	font-family: Verdana, Geneva, sans-serif;
+}
+a.NavBar{
+	width: 20%;
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-decoration: none;
+
+
+
+}
+/*Link design*/
+a:link{
+
+}
+
+a:visited{
+
+}
+
+a.NavBar:hover, a.NavBar:active{
+
+	background-color: #fdb77e;
+}
+
+
+
+/*------------------------------------------------------------------*/
+
+/*Main and Footer of page*/
+#Column{
+/*	position: absolute;*/
+	top: 300px;
+/*	left: 15%;*/
+	width: 80%;
+	height: 100%;
+	background-color: white;
+	min-width: 770px;
+
+}
+
+main{
+	height: auto;
+	margin-right: 5px;
+	margin-left: 5px;
+	padding-top: 40px;
+	padding-bottom: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*TODO: Change the name of this class to something more appropriate*/
+main.packages{
+	margin-left: 15%;
+	text-align: justify;
+	line-height: 1.25;
+	margin-right: 15%;
+	padding-top: 50px;
+
+}
+
+main.login{
+	padding-top: 100px;
+	margin:auto;
+	width: 60%;
+
+}
+/*------------------------------------------------------------------*/
+section.packages{
+	padding-top:30px;
+}
+/*------------------------------------------------------------------*/
+
+
+footer{
+	height: 120px;
+	margin-right: 5px;
+	margin-left: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top: 50px;
+
+	
+}
+/*------------------------------------------------------------------*/
+
+h1{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	padding-bottom: 50px;
+}
+h2{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+section.default{
+
+	padding-top: 10px;
+}
+
+/*------------------------------------------------------------------*/
+
+aside.footAside{
+	float: left;
+}
+div.footDiv{
+	float: right;
+}
+li.footNavBar{
+	width: 20%;
+	display: inline;
+
+	padding-left: 5px;
+	padding-right: 5px;
+
+}
+a.footNavBar{
+
+}
+a.login{
+	padding-top: 30px;
+
+}
+/*------------------------------------------------------------------*/
+
+/* the picture shown along side the testimonials
+*/
+img.imgTestimonial{
+	max-height: 100px;
+	max-width: 100px;
+
+	float: left;
+}
+
+div.testimonial{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+img.imgProfiles{
+	max-width: 150px;
+	max-height: 150px;
+
+	min-width: 150px;
+	min-height: 150px;
+}
+img.imgCircle{
+	border-radius: 50%;
+}
+/*The 
+*/
+p.pTestimonial{
+	padding-left: 200px;
+	font-style: oblique;
+}
+
+
+/*------------------------------------------------------------------*/
+
+embed{
+
+}
+/*------------------------------------------------------------------*/
+
+table.default{
+	padding-top: 50px;
+	outline: 1px solid #ff8a00; 
+}
+table.packages{
+	width: 100%;
+	text-align: center;
+	outline: 1px solid #ff8a00; 
+/*	  white-space: nowrap;
+  overflow: hidden;*/
+}
+th.packages{
+
+}
+tr{
+	height: 60px;
+	text-align: left;
+}
+
+
+tr.packages{
+	text-align: center;
+}
+tr.striped:nth-child(even){
+	background-color: #f2f2f2;
+
+}
+
+td.default{
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+td.packages{
+	margin-left: 5px;
+	width:	20%;
+	height: 60px;
+	text-align: center;
+
+}
+td.packages:hover{
+	background-color: #cde7ff;
+
+}
+
+tr.packages:hover{
+	background-color: #cde7ff;
+}
+/*--------------------------------------------------------------------*/
+div.packages{
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+/*------------------------------------------------------------------*/
+form.contactUs{
+	display: block;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+form.login{
+
+	outline: 1px solid #ff8a00;
+	width: 400px;
+	height: 50%;
+	padding-bottom: 40px;
+	padding-top: 40px;
+	padding-left: 60px;
+
+	margin-right: 30px;
+	margin-left: 30px;
+
+
+}
+
+textarea{
+
+}
+
+input.contactUs[type=text]{
+	width:180px;
+
+}
+input[type=submit]{
+	background-color: #fdb77e;
+	margin-top:80px;
+	border:none;
+	font-size: 16px;
+    cursor: pointer;
+	padding: 8px 8px 8px 8px;
+	background-color:#f49b53;
+	color: white;
+}
+textarea.contactUs{
+
+	min-width: 62%;
+	min-height: 200px;
+}
+
+
+/*button.login{
+	width: 40%;
+	text-align: center;
+}*/
+button:hover{
+	background-color: #fdb77e;
+}
+
+button{
+	margin-top:auto;
+	border:none;
+	font-size: 16px;
+    cursor: pointer;
+	padding: 8px 8px 8px 8px;
+	background-color:#f49b53;
+	color: white;
+}
+/*------------------------------------------------------------------*/
+
+#home{
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+img.founder{
+	max-height: 120px;
+	max-width: 120px;
+	height: auto;
+	width: auto;
+	transform: rotate(90deg);
+	float: left;
+	padding: 10px 0px 40px 10px;
+	border-radius: 80%;
+}
+
+section.founder{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: justify;
+	line-height: 1.25;
+}
+
+#introMarketing{
+	padding-bottom: 60px;
+}
+
+/*Styles button on sign up page*/
+select{
+	padding-top:10px;
+	width:100%;
+	padding-bottom:10px;
+	margin: 5px 5px 5px 5px;
+}
+textarea.SignUp{
+	resize:none;
+	max-width: 90%;
+	font-family: Verdana, Geneva, sans-serif;
+	margin-left:80px;
+
+}
+.button{
+	margin-top:80px;
+	border:none;
+	font-size: 16px;
+    cursor: pointer;
+	padding: 8px 8px 8px 8px;
+	background-color:#f49b53;
+	color: white;
+} /*Styles button on sign up page*/
