@@ -593,8 +593,8 @@ section {
 }
 
 .team .cover .overlay {
-	height: 250px;
-	padding-top: 60px;
+	height: 308px;
+	padding-top: 5px;
 	opacity: 0;
 	background: rgba(0, 168, 255, 0.9);
 	-webkit-transition: opacity 0.45s ease;
