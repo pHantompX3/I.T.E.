@@ -1,0 +1,9 @@
+Lab 2 Eureka Database sign_in_info relation:
+
+4 b) CREATE table sign_in_info (customer_ID INT NOT NULL key, username varchar(30) NOT NULL, 
+password varchar(30) NOT NULL, payment_plan varchar(30), sub_date date NOT NULL);
+
+c) insert into sign_in_info (customer_ID, username, password, payment_plan, sub_date) VALUES ('10', 'pedrito99', 'pedro120599', 
+'Traditional', '2017-09-04'), ('7', 'allie03', 'allison270803', 'Blended', '2017-09-14'), ('3', 'jlyon_95', 'james080495', 'Online', 
+'2017-09-04'), ('2', 'tummy98', 'tummika11098', 'Blended', '2017-09-06'), ('4', 'mari_92', 'maria261292', 'Crash Course', '2017-10-02');
+
