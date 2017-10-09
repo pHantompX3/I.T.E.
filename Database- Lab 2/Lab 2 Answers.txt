@@ -1,0 +1,73 @@
+Wayden Jones - 415001267 - wayden.jones@mycavehill.uwi.edu
+Paula Melero Ramirez - 416001088 - paula.meleroramirez@mycavehill.uwi.edu
+
+
+2. Create database Eureka;
+
+3.create table customers (customer_NO INT NOT NULL key Auto_increment, first_name varchar(30), middle_name varchar(30), last_name varchar(30) NOT NULL, address varchar(30), parish varchar(30) not null< country varchar(30) not null, business name varchar(30), home_tel varchar(14) not null, work_tel varchar(14) not null, mobile_tel varchar(14) not null, email varchar(30) not null);
+
+	a) 
+INSERT INTO customers
+(last_name, first_name, address, parish, country, mobile_tel, email)VALUES
+('Melero-Ramirez', 'Paula', 'Husbands', 'St. Lucy','Barbados', '2651432', 'paula.melero@gmail.com'),
+('Thomas', 'Tummika', 'FairyValley', 'Christ Church', 'Barbados', '8436543','tummika.thomas@gmail.com'),
+('Jones', 'James', 'Husbands', 'St. James', 'Barbados', '8953425', 'james.jones@gmail.com'),
+('Clock','Maria', 'Waterford', 'St. Michael', 'Barbados', '3526421', 'maria.clock@gmail.com'),
+('Bayley', 'Albert', 'Crab Hill', 'St. Lucy', 'Barbados', '6432413', 'albert.bayley@gmail.com'),
+('Grantley', 'Grace', 'Belmount', 'St. Michael', 'Barbados', '8788765', 'grace.grantley@gmail.com'),
+('Adams', 'Allison', 'Eagle Hall', 'St. Michael','Barbados', '6543452', 'allision.adams@gmail.com'),
+('Kellman', 'Kevin', 'Six Roads', 'St. Philip', 'Barbados', '5543546', 'kevin.kellman@gmail.com'),
+('Sandiford', 'Sarah', 'Lemon Arbour', 'St John', 'Barbados', '4434357', 'sarah.sandiford@gmail.com'),
+('Perry', 'Pedro', 'Checker Hall', 'St. Lucy', 'Barbados', '8342534', 'pedro.perry@gmail.com');
+
+	
+	b)
+
+select*from customers;
+
+	c)
+
+select*from customers order by last_name;
+
+	d)
+SELECT first_name,last_name,email FROM customers WHERE parish = 'St. Michael' ;
+
+	e)
+update customers set work_tel = '(246)-111-1111' WHERE customer_NO = '4';
+
+	f)
+DELETE FROM customers Where customer_NO = '6';
+	
+	g)
+select*from customers WHERE parish ='St. Lucy' AND country = 'Barbados';
+
+
+
+4)
+
+	a)
+Customer_NO (int)
+Username varchar(30)
+password VARCHAR (30)
+Sub_Date date
+payment_plan varchar(30)
+
+	b)
+
+CREATE table sign_in_info (customer_ID INT NOT NULL key, username varchar(30) NOT NULL, 
+password varchar(30) NOT NULL, payment_plan varchar(30), sub_date date NOT NULL);
+
+c) 
+insert into sign_in_info (customer_ID, username, password, payment_plan, sub_date) VALUES ('10', 'pedrito99', 'pedro120599', 
+'Traditional', '2017-09-04'), ('7', 'allie03', 'allison270803', 'Blended', '2017-09-14'), ('3', 'jlyon_95', 'james080495', 'Online', 
+'2017-09-04'), ('2', 'tummy98', 'tummika11098', 'Blended', '2017-09-06'), ('4', 'mari_92', 'maria261292', 'Crash Course', '2017-10-02');
+
+
+
+
+
+
+
+
+
+
