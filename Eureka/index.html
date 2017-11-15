@@ -313,25 +313,7 @@ Wayden Jones            415001267       wayden.jones@mycavehill.uwi.edu         
 						<button data-toggle="modal" data-target="#modal" class="btn btn-blue-fill">Sign Up Now</button>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<div class="team text-center">
-						<div class="cover" style="background:url('img/team/Barbados-flag.jpg'); background-size:cover;">
-							<div class="overlay text-center">
-								<h5 class="light light-white">Jessica Walkes works at Eureka as an Assistant Professor of Spanish. 
-						She has four (4) years of experience in the teaching field, Jessica Walkes 
-						holds a diploma in History and Spanish and a diploma in Spanish Studies, both at the University of Havana.She developed an interest in teaching the language and culture of Spanish when studying Latin American Literatures 
-						and Cultures in the first year of university. She earned her 
-						teaching license in 2011 after passing the board of examinations.</h5>
-							</div>
-						</div>
-						<img src="img/team/jessica.jpeg" alt="Team Image" class="avatar">
-						<div class="title">
-							<h4>Jessica Walkes</h4>
-							<h5 class="muted regular">Tutor</h5>
-						</div>
-						<a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue-fill ripple">Sign Up Now</a>
-					</div>
-				</div>
+				
 				<div class="col-md-4">
 					<div class="team text-center">
 						<div class="cover" style="background:url('img/team/Download.jpg'); background-size:cover;">
@@ -460,20 +442,20 @@ Wayden Jones            415001267       wayden.jones@mycavehill.uwi.edu         
 			<div class="modal-content modal-popup">
 				<a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
 				<h3 class="white">Sign Up</h3>
-				<form action="" class="popup-form">
-					<input type="text" class="form-control form-white" placeholder="First Name">
-					<input type="text" class="form-control form-white" placeholder="Middle Name">
-					<input type="text" class="form-control form-white" placeholder="Last Name">
-					<input type="text" class="form-control form-white" placeholder="User Name">
-					<input type="text" class="form-control form-white" placeholder="Password">
-					<input type="text" class="form-control form-white" placeholder="Address">
-					<input type="text" class="form-control form-white" placeholder="Parish">
-					<input type="text" class="form-control form-white" placeholder="Country">
-					<input type="text" class="form-control form-white" placeholder="Business Name">
-					<input type="text" class="form-control form-white" placeholder="Home number">
-					<input type="text" class="form-control form-white" placeholder="Work number">
-					<input type="text" class="form-control form-white" placeholder="Cellphone number">
-					<input type="text" class="form-control form-white" placeholder="Email Address">
+				<form method= "post" action="" class="popup-form">
+					<input type="text" class="form-control form-white" placeholder="First Name" name="fname">
+					<input type="text" class="form-control form-white" placeholder="Middle Name" name="mname">
+					<input type="text" class="form-control form-white" placeholder="Last Name" name="lname">
+					<input type="text" class="form-control form-white" placeholder="User Name" name="uname">
+					<input type="text" class="form-control form-white" placeholder="Password" name="psswd">
+					<input type="text" class="form-control form-white" placeholder="Address" name="address">
+					<input type="text" class="form-control form-white" placeholder="Parish" name="parish">
+					<input type="text" class="form-control form-white" placeholder="Country" name="country">
+					<input type="text" class="form-control form-white" placeholder="Business Name" name="businessname">
+					<input type="text" class="form-control form-white" placeholder="Home number" name="hmenum">
+					<input type="text" class="form-control form-white" placeholder="Work number" name="wrknum">
+					<input type="text" class="form-control form-white" placeholder="Cellphone number" name="cellnum">
+					<input type="text" class="form-control form-white" placeholder="Email Address" name="email">
 					<div class="dropdown">
 						<button id="dLabel" class="form-control form-white dropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							Pricing Plan
@@ -492,6 +474,63 @@ Wayden Jones            415001267       wayden.jones@mycavehill.uwi.edu         
 					</div>
 					<button type="submit" class="btn btn-submit">Submit</button>
 				</form>
+				<?php
+	  if(isset($_POST['submit']))
+	  {
+		  if($_POST['fname'] and $_POST['lname']) //if fname and lname are not empty
+		  {
+			  $fname=htmlentities(filter_input(INPUT_POST, 'First Name', FILTER_SANITIZE_STRING), ENT_QUOTES);
+			  $mname=htmlentities(filter_input(INPUT_POST, 'mname', FILTER_SANITIZE_STRING), ENT_QUOTES);
+			  $lname=htmlentities(filter_input(INPUT_POST, 'lname', FILTER_SANITIZE_STRING), ENT_QUOTES);
+			$uname=htmlentities(filter_input(INPUT_POST, 'uname', FILTER_SANITIZE_STRING), ENT_QUOTES);
+			$passwd=htmlentities(filter_input(INPUT_POST, 'passwd', FILTER_SANITIZE_STRING), ENT_QUOTES);
+			$address=htmlentities(filter_input(INPUT_POST, 'address', FILTER_SANITIZE_STRING), ENT_QUOTES);
+			$parish=htmlentities(filter_input(INPUT_POST, 'parish', FILTER_SANITIZE_STRING), ENT_QUOTES);
+			$country=htmlentities(filter_input(INPUT_POST, 'country', FILTER_SANITIZE_STRING), ENT_QUOTES);
+			$businessname=htmlentities(filter_input(INPUT_POST, 'businessname', FILTER_SANITIZE_STRING), ENT_QUOTES);
+			$hmenum=htmlentities(filter_input(INPUT_POST, 'hmenum', FILTER_SANITIZE_STRING), ENT_QUOTES);
+			$wrknum=htmlentities(filter_input(INPUT_POST, 'wrknum', FILTER_SANITIZE_STRING), ENT_QUOTES);
+			$cellnum=htmlentities(filter_input(INPUT_POST, 'cellnum', FILTER_SANITIZE_STRING), ENT_QUOTES);
+			$email=htmlentities(filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING), ENT_QUOTES);
+			
+			  // Create Mysqli object
+			  $db = new mysqli('127.0.0.1', 'root', '', 'lab3');
+			
+			  //Check the connection
+			  if ($db->connect_error)
+			  {
+				die('Connect Error(' . $db->connect_errorno . ')' . $db->connect_error);
+			  }
+			
+			  //create SQL Query
+			  $query= "INSERT INTO customers (FirstName, MiddleName, LastName,City, UserName, Password, Address, Country, BussinessName, HomeNum, WorkNum, CellNum, Email)VALUES('$fname','$mname','$lname','$mname','$uname','$passwd','$address','$parish','$country','$businessname','$hmenum','$wrknum','$cellnum','$email')";
+			  
+			  //execute the mysql query and store the results
+			  $result=mysqli_query($db,$query);		
+			  
+			  if($result)
+			  {
+				  echo "</br>";
+			  echo "New Customer Succesfully Added";}
+			  else{
+				  echo "New Customer creation failed";
+			  }
+			  
+			  //Close the db connection
+			  $db->close();
+		  }		  
+		  else{
+			  echo " </br>";
+		  echo "Please fill out all fields. </br> Click Add New Customer and try again";}
+			  }
+			  
+			  //Close the db connection
+			  $db->close();
+		  }		  
+		  else{
+		  echo "Please fill out both first name and last name.";}
+	  }
+	?>
 			</div>
 		</div>
 	</div>
