@@ -152,7 +152,9 @@ header .typed-cursor {
 	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
 }
-
+slider.{
+	position: right;
+}
 a {
 	text-decoration: none;
 	color: #00a8ff;
